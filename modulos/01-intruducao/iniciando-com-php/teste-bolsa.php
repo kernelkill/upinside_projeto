@@ -3,7 +3,7 @@
 
 header('Content-Type: text/html; charset=utf-8');
 
-$Bolsa = "Marrom";
+$Bolsa = "Vermelha";
 
 if (!empty($Bolsa)):
     if ($Bolsa == "Vermelha"):
@@ -12,7 +12,7 @@ if (!empty($Bolsa)):
         echo "Amor, comprei a preta pois não tinha a vermelha!";
     else:
         echo "Alô amor, não tem as cores. Posso levar outra?<br>";
-        $Amor = true;
+        $Amor = false;
         if ($Amor):
             echo "Pode sim amor. Traga qualquer uma!";
         else:
