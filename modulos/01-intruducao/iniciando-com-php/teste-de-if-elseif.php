@@ -2,7 +2,7 @@
 
 header('Content-Type: text/html; charset=utf-8');
 
-$idade = 20;
+$idade = 24;
 
 if (!empty($idade)):
     if ($idade == 25):
