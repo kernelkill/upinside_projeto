@@ -12,19 +12,21 @@ function checkDir($Dir){
 
 
 $getDir = getcwd();//Pega nome do diretorio atual
-$setDir = "{$getDir}/04";
+$setDir = "{$getDir}/uploads";
 echo "{$getDir}<hr>";
 
 //if (!checkDir($setDir)):
 //    mkdir($setDir, 0777);
 //endif;
 
-//
+
 //if(checkDir($setDir)):
 //    rmdir($setDir);    
 //endif;
 
-rename($setDir, "{$getDir}/uploads");
+//rename($setDir, "{$getDir}/uploads");
+
+
 
 echo str_repeat("<br>", 40);
 ?>
