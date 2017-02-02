@@ -36,3 +36,14 @@ var_dump(array_values($Pessoa));//Pegando somente os valores do array.
 var_dump(array_slice($Pessoa, 2,2));//Pegando posiçoes exata de uma array.
 
 var_dump("O array tem ".count($Pessoa)." indices"); //contando quantos indices tem.
+
+if(in_array("Consultoria em TI", $Pessoa))://Busca um indice dentro do nosso array.
+    echo "Existe";
+endif;
+
+
+$Nomes = "Joao, Manuel, Maria";
+
+$Nomes = explode(', ', $Nomes);
+
+var_dump($Nomes);
