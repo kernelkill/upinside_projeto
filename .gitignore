@@ -1,0 +1,8 @@
+
+
+#Para todo os arquivos e sub-pastas que estiver dentro de nbproject
+#Essa pasta contem arquivos de configuraçoes local
+
+nbproject/*
+!nbproject/project.properties
+!nbproject/project.xml
