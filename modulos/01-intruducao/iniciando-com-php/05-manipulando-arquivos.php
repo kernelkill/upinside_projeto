@@ -25,6 +25,12 @@ while (!feof($Fileread)):
     $Dado = fgets($Fileread);
     echo "{$Dado}<br>";
 endwhile;
+fclose($Fileread);
 
+//file_put_contents("{$baseDir}/05.txt", "Fazendo mais um teste");
+
+$Content = "{$baseDir}/05.txt";
+$Filecontent = file_get_contents($Content);
+var_dump($Filecontent);
 
 ?>
