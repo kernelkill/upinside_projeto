@@ -39,9 +39,15 @@ echo getcwd();//mostrando diretorio atual
 echo "<hr>";
 
 $newDir = getcwd();
-$openDir = opendir($newDir);
+$openDir = opendir($newDir);//abre o diretorio
 
+while ($File = readdir($openDir)):
+    if ($File != "." && $File != ".."):
+        echo "{$File}<br>";
+    endif;
+endwhile;
 
+echo "<hr>";
 
 echo str_repeat("<br>", 40);
 ?>
