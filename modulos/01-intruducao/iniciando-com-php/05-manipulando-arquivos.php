@@ -15,4 +15,9 @@ $Txt = "Joabe Kachorros\r\nhttps://facebook.com/JKACTO";//cria o texto
 fwrite($File, $Txt);//escreve no arquivo oq foi inserido ali em cima
 fclose($File);//fecha arquivo
 
+$Add = "Adicionando conteudo adicional.";
+$Filetrue = fopen("{$baseDir}/05.txt", 'a');
+fwrite($Filetrue, $Add);
+fclose($Filetrue);
+
 ?>
