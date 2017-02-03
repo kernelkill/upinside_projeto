@@ -43,6 +43,7 @@ $openDir = opendir($newDir);//abre o diretorio
 
 while ($File = readdir($openDir)):
     if ($File != "." && $File != ".."):
+        echo "<img src= '04/{$File}' width='150'/><br>";
         echo "{$File}<br>";
     endif;
 endwhile;
