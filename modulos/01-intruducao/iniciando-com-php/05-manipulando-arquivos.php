@@ -11,13 +11,20 @@ echo "<hr>";
 //a = anexar
 
 $File = fopen("{$baseDir}/05.txt", 'w');//cria um novo arquivo dentro da pasta atual
-$Txt = "Joabe Kachorros\r\nhttps://facebook.com/JKACTO";//cria o texto
+$Txt = "Joabe Kachorros\r\nhttps://facebook.com/jkacto";//cria o texto
 fwrite($File, $Txt);//escreve no arquivo oq foi inserido ali em cima
 fclose($File);//fecha arquivo
 
-$Add = "Adicionando conteudo adicional.";
+$Add = "\r\nAdicionando conteudo adicional.";
 $Filetrue = fopen("{$baseDir}/05.txt", 'a');
 fwrite($Filetrue, $Add);
 fclose($Filetrue);
+
+$Fileread = fopen("{$baseDir}/05.txt", r);
+while (!feof($Fileread)):
+    $Dado = fgets($Fileread);
+    echo "{$Dado}<br>";
+endwhile;
+
 
 ?>
