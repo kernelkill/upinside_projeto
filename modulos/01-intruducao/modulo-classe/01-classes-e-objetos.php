@@ -6,6 +6,7 @@
     </head>
     <body>
         <?php
+        
             require('./class/ClassesObjeto.class.php');
             
             $teste = new ClassesObjeto();
