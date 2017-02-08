@@ -13,6 +13,15 @@
         $pessoa->setUsuario('Joabe Kachorroski', 27, 'WebMaster');
         $usuario = $pessoa->getUsuario($pessoa);
         echo $usuario;
+        
+        echo "<hr>";
+        
+        $pessoa->Idade = 'Banana';
+        
+        $pessoa->setUsuario('Joabe Kachorroski', 27, 'Web');
+        $pessoa->setIdade(27);
+        
+        $pessoa->getDebug();
         ?>
     </body>
 </html>

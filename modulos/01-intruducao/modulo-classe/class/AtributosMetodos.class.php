@@ -9,11 +9,25 @@ class AtributosMetodos {
     
     function setUsuario($Nome, $Idade, $Profissao){
         $this->Nome = $Nome;
-        $this->Idade = $Idade;
+        $this->setIdade($Idade);
         $this->Profissao = $Profissao;
     }
     
     function getUsuario(){
         return "{$this->Nome} tem {$this->Idade} anos de idade. E trabalha com {$this->Profissao}";
+    }
+    
+    function getDebug(){
+        echo "<pre>";
+        print_r($this);
+        echo "</pre>";
+    }
+    
+    function setIdade($Idade){
+        if (!is_int($Idade)):
+            die('Idade informada e incorreta');
+        else:
+        $this->Idade = $Idade;
+        endif;
     }
 }
