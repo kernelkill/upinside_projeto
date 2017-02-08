@@ -15,6 +15,9 @@ $Joabe->setRamo('Analista de Sistemas');
 $Joabe->setIdade(29);
 
 var_dump($Joabe);
+var_dump(get_class_methods($Joabe));
+var_dump(get_class_vars('MinhaSegundaClasse'));
+var_dump(get_class($Joabe));
 
 echo str_repeat("<br>", 40);
 ?>
