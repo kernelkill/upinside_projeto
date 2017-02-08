@@ -1,6 +1,6 @@
 <?php
 
-class MinhaSegundaClasse {
+class MinhaSegundaClasse extends MinhaClasse{
    
     public $Idade;
     
