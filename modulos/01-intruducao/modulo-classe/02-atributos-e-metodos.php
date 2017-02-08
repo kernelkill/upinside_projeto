@@ -21,6 +21,9 @@
         $pessoa->setUsuario('Joabe Kachorroski', 27, 'Web');
         $pessoa->setIdade(27);
         
+        $pessoa->Envelhecer();
+        $pessoa->Envelhecer();
+        
         $pessoa->getDebug();
         ?>
     </body>

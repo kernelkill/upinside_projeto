@@ -30,4 +30,9 @@ class AtributosMetodos {
         $this->Idade = $Idade;
         endif;
     }
+    
+    function Envelhecer(){
+        /* @var $Idadde type */
+        $this->Idade = $this->Idade + 1;
+    }
 }
