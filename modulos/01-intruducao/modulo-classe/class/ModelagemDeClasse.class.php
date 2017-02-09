@@ -19,6 +19,12 @@ class ModelagemDeClasse {
         $this->ContaSalario = $ContaSalario;
     }
     
+    public function Trabalhar($Trabalho, $Valor){
+        
+        $this->ContaSalario += $Valor;
+        $this->DarEcho("{$this->Nome} desenvolveu um  {$this->Trabalho} e recebeu {$this->ToReal($Valor)}.");
+    }
+    
     public function setNome($Nome) {
         $this->Nome = $Nome;
     }

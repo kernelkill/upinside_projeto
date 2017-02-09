@@ -8,6 +8,13 @@
         <?php
             
             require './class/ModelagemDeClasse.class.php';
+            
+            $joabe = new ModelagemDeClasse('Joabe', 27, 'Webmaster', 5250);
+            
+            $joabe->Trabalhar('um portal', 5000);
+            
+            var_dump($joabe);
+            
         ?>
     </body>
 </html>
