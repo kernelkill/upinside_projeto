@@ -18,6 +18,12 @@
         $readB->setTermos("categoria = 'redes sociais");
         $readB->Ler();
         
+        
+        $readC = $readA;
+        $readC->setTabela('Comentarios');
+        $readC->setTermos("post = 25");
+        $readC->Ler();
+        
         var_dump($readA, $readB);
         ?>
     </body>

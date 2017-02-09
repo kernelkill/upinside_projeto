@@ -13,6 +13,10 @@ class ReplicaClonagem {
         $this->AddQuery = $AddQuery;
     }
     
+    function setTabela($Tabela) {
+        $this->Tabela = $Tabela;
+    }
+    
     function setTermos($Termos) {
         $this->Termos =$Termos;
     }
