@@ -11,7 +11,14 @@
         $readA = new ReplicaClonagem("posts", "categoria = 'noticias' ", 'ORDER BY DESC');
         $readA->Ler();
         
-        var_dump($readA);
+        $readA->setTermos("categoria = 'internet'");
+        $readA->Ler();
+        
+        $readB = $readA;
+        $readB->setTermos("categoria = 'redes sociais");
+        $readB->Ler();
+        
+        var_dump($readA, $readB);
         ?>
     </body>
 </html>
