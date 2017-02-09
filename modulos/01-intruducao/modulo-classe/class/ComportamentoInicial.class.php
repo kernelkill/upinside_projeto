@@ -12,7 +12,11 @@ class ComportamentoInicial {
         $this->Idade = (int) $Idade;
         $this->Profissao = (string) $Profissao;
         $this->Salario = (float) $Salario;
-        echo "O objeto {$this->Nome} foi instanciado corretamente.";
+        echo "O objeto {$this->Nome} foi instanciado corretamente.<hr>";
+    }
+    
+    function __destruct() {
+        echo "O objeto {$this->Nome} foi destruido corretamente.<hr>";
     }
             
     function ver(){

@@ -10,7 +10,9 @@
         
 //        $joabe = new ComportamentoInicial;
         
-        $joabe = new ComportamentoInicial('Joabe', 27, 'Web', 2100);
+        $joabe = new ComportamentoInicial('Joabe', 27, 'Web', 4100);
+        $marcos = new ComportamentoInicial('Marcos', 17, 'Web', 3100);
+        $antonio = new ComportamentoInicial('Antonio', 27, 'Web', 2100);
         
         $joabe->ver();
         ?>
