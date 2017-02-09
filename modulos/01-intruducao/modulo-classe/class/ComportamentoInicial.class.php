@@ -7,6 +7,14 @@ class ComportamentoInicial {
     var $Profissao;
     var $Salario;
     
+    function __construct($Nome, $Idade, $Profissao, $Salario) {
+        $this->Nome = (string) $Nome;
+        $this->Idade = (int) $Idade;
+        $this->Profissao = (string) $Profissao;
+        $this->Salario = (float) $Salario;
+        echo "O objeto {$this->Nome} foi instanciado corretamente.";
+    }
+            
     function ver(){
         echo "<pre>";
         print_r($this);
