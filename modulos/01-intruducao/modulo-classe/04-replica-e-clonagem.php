@@ -12,19 +12,22 @@
         $readA->Ler();
         
         $readA->setTermos("categoria = 'internet'");
-        $readA->Ler();
         
-        $readB = $readA;
+        
+        $readB = clone($readA);
         $readB->setTermos("categoria = 'redes sociais");
-        $readB->Ler();
         
         
-        $readC = $readA;
+        
+        $readC = clone ($readA);
         $readC->setTabela('Comentarios');
         $readC->setTermos("post = 25");
+        
+        $readA->Ler();
+        $readB->Ler();
         $readC->Ler();
         
-        var_dump($readA, $readB);
+        var_dump($readA, $readB,$readC);
         ?>
     </body>
 </html>
