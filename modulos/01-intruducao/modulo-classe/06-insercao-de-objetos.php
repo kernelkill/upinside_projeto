@@ -24,8 +24,11 @@
 
     $empresa->Contratar($marcos,'Perito Balistico', 8900);
     $empresa->Pagar();
-    $empresa->Promover('Chefe Balistica',1100);
+    $empresa->Promover('Chefe Balistica',12500);
     $empresa->Pagar();
+
+    $empresa->Funcionarios($joabe);
+    $empresa->Promover('Chefe Perito Forense');
 
     var_dump($joabe, $marcos ,$empresa);
  
