@@ -11,9 +11,25 @@
 
 <?php
     require('class/InteracaoClasse.class.php');
-    require('class/InsercaoDeObjetos.php');
+    require('class/InteracaoDeObjetos.php');
+
+    $joabe = new InteracaoClasse('Joabe G. Kachorroski', 29, 'Webmaster', 1500);
+    $marcos = new InteracaoClasse('Marcos', 22, 'Web Design', 500);
+    
+    $empresa = new InsercaoDeObjetos('Policia Federal');
+    $empresa->Contratar($joabe,'Perito Criminal',12000);
+    $empresa->Pagar();
+    $empresa->Promover('Chefe de Setor', 15000);
+    $empresa->Pagar();
+
+    $empresa->Contratar($marcos,'Perito Balistico', 8900);
+    $empresa->Pagar();
+    $empresa->Promover('Chefe Balistica',1100);
+    $empresa->Pagar();
+
+    var_dump($joabe, $marcos ,$empresa);
+ 
 
 ?>
-
 </body>
 </html>

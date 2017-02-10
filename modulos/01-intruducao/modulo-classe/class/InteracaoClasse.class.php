@@ -12,13 +12,13 @@ class InteracaoClasse {
     public $Profissao;
     public $Empresa;
     public $Salario;
-    public $ContaSalario;
+    public $Conta;
     
-    function __construct($Nome, $Idade, $Profissao, $ContaSalario) {
+    function __construct($Nome, $Idade, $Profissao, $Conta) {
         $this->Nome = $Nome;
         $this->Idade = $Idade;
         $this->Profissao = $Profissao;
-        $this->ContaSalario = $ContaSalario;
+        $this->Conta = $Conta;
     }
     
     public function Trabalhar($Empresa, $Salario, $Profissao){
@@ -27,13 +27,11 @@ class InteracaoClasse {
         $this->Profissao = $Profissao;
 
     }
-    
-    public function ToReal($Valor){
-        return number_format($Valor,'2', '.', ',');
-        
-    }
-    
-    public function DarEcho($Mensagem){
-        echo "<p>{$Mensagem}</p>";
+
+
+    public function Receber($Valor)
+    {
+        $this->Conta += $Valor;
+
     }
 }
