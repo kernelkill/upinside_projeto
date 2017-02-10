@@ -5,9 +5,56 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teste PHPStorm</title>
+    <title>PHPStorm Teste</title>
 </head>
 <body>
+<h1>Testando Debbug PHPStorm</h1>
 
 </body>
 </html>
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: kachorroski
+ * Date: 09/02/17
+ * Time: 21:14
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
