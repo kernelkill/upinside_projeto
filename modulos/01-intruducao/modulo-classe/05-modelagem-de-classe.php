@@ -9,7 +9,7 @@
             
             require './class/ModelagemDeClasse.class.php';
             
-            $joabe = new ModelagemDeClasse('Joabe', 27, 'Webmaster', 5250);
+            $joabe = new ModelagemDeClasse('Joabe', 27, 'Developer', 5250);
             
             $joabe->Trabalhar('um portal', 5000);
             
