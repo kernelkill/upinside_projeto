@@ -15,12 +15,11 @@
  * Date: 13/02/17
  * Time: 23:20
  */
+
+     require('./inc/config.inc.php');
      $ClasseA = new ClassesObjeto;
      $ClasseB = new AtributosMetodos;
      $ClasseC = new ComportamentoInicial('Joabe', 27, 'Dev', 2500);
-
-
-
 
 ?>
 
