@@ -12,6 +12,8 @@
 <?php
 require_once ('./inc/config.inc.php');
 
+    $documentar = new DocumentacaoDeClasse;
+
 ?>
 
 </body>
