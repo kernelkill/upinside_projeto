@@ -8,7 +8,6 @@
     <title>Heranca PHP</title>
 </head>
 <body>
-
 <?php
 /**
  * Created by PhpStorm.
@@ -16,6 +15,10 @@
  * Date: 15/02/17
  * Time: 21:22
  */
+
+
+    require_once('./inc/config.inc.php');
+    
 ?>
 
 </body>
