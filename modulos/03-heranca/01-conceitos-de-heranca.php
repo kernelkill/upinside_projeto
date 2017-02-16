@@ -19,6 +19,9 @@
 
     require_once('./inc/config.inc.php');
     
+    $pessoa = new Heranca('Joabe', 23);
+
+    var_dump($pessoa);
 ?>
 
 </body>
