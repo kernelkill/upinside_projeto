@@ -15,7 +15,19 @@
  * Date: 15/02/17
  * Time: 22:48
  */
+    
+    require_once('./inc/config.inc.php');
+    
+    $boleto = new Polimorfismo('Garrafa','50');
+    $boleto->Pagar();
 
+    var_dump($boleto);
+    echo "<hr>";
+
+    $deposito = new PolimorfismoDeposito('Garrafa','50');
+    $deposito->Pagar();
+    
+    var_dump($deposito);
 
 
 ?>
