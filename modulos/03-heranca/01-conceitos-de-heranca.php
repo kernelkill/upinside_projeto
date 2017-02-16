@@ -26,6 +26,16 @@
     $pessoa->VerPessoa();
 
     var_dump($pessoa);
+    echo "<hr>";
+    
+    $pessoaJuridica = new HerancaJuridica('Joabe Kachorroski',29, 'Policia Federal');
+    $pessoaJuridica->Formar('Curso');
+    $pessoaJuridica->Contratar('Antonio');
+    $pessoaJuridica->Contratar('Maria');
+    $pessoaJuridica->VerEmpresa();
+
+
+    var_dump($pessoaJuridica);
 ?>
 
 </body>

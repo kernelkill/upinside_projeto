@@ -23,7 +23,7 @@ class Heranca
         $this->Idade += 1;
     }
 
-    public function Formar($Cursos) {
+    public function Formar($Cursos  ) {
         $this->Formacao[] = (string) $Cursos;
     }
 

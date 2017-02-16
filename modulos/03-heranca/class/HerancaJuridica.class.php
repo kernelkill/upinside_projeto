@@ -25,7 +25,7 @@ class HerancaJuridica extends Heranca
 
     public function VerEmpresa()
     {
-        echo "{} foi fundada por {} <br><small style='color:#09f;'>";
+        echo "{$this->Empresa} foi fundada por {$this->Nome} <br><small style='color:#09f;'>";
         parent::VerPessoa();
         echo "</small>";
     }
