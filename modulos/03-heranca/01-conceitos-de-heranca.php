@@ -20,6 +20,10 @@
     require_once('./inc/config.inc.php');
     
     $pessoa = new Heranca('Joabe', 23);
+    $pessoa->Formar('Pro PHP');
+    $pessoa->Formar('WS');
+    $pessoa->Envelhecer();
+    $pessoa->VerPessoa();
 
     var_dump($pessoa);
 ?>
