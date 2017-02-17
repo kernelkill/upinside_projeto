@@ -22,6 +22,7 @@ class PolimorfismoCartao extends Polimorfismo
 
     /**
      * @param float $Juros
+     * para 5,5% tem que fazer 5.5
      */
     public function setJuros($Juros)
     {
@@ -33,7 +34,7 @@ class PolimorfismoCartao extends Polimorfismo
      */
     public function setEncargos($Encargos)
     {
-        $this->Encargos = $Encargos;
+        $this->Encargos = ($this->Valor * ($this->Juros / 100));
     }
 
     /**
