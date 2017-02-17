@@ -26,7 +26,7 @@ class PolimorfismoDeposito extends Polimorfismo
 
     public function Pagar()
     {
-        $this->Valor = ($this->Valor / 100) * 100 - $this->Desconto;
+        $this->Valor = ($this->Valor / 100) * (100 - $this->Desconto);
         parent::Pagar();
 
     }

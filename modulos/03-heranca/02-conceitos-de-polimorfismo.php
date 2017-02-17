@@ -29,6 +29,11 @@
     
     var_dump($deposito);
 
+    $cartao = new PolimorfismoCartao('Garrafa', '50');
+   $cartao->Pagar();
+
+    var_dump($cartao);
+
 
 ?>
 
