@@ -19,6 +19,7 @@
     
     $conta = new Abstracao('Joabe Kachorroski', 500);
     $conta->Depositar(1000);
+    $conta->Sacar(500);
 
     var_dump($conta);
 
