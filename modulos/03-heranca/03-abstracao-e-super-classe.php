@@ -18,10 +18,16 @@
     require_once ('./inc/config.inc.php');
     
     $conta = new Abstracao('Joabe Kachorroski', 500);
+    $contaDois = new Abstracao('Antonio Marcos', 500);
+
+
+    $conta->Depositar(1000);
     $conta->Depositar(1000);
     $conta->Sacar(500);
+    $conta->Sacar(500);
+    $conta->Transferir(500,$contaDois);
 
-    var_dump($conta);
+    var_dump($conta, $contaDois);
 
 ?>
 
