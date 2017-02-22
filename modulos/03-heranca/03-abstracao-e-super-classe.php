@@ -32,6 +32,9 @@
     $cc = new AbstracaoCC('Joabe Kachorroski', 0, 1000);
     $cp = new AbstracaoCP('Joabe Kachorroski', 0);
 
+    $cc->VerSaldo();
+    $cp->VerSaldo();
+
     var_dump($cc, $cp);
 
 ?>

@@ -18,4 +18,9 @@ class AbstracaoCC extends Abstracao
     }
 
 
+    public function VerSaldo()
+    {
+        // TODO: Implement VerSaldo() method.
+        parent::Extrato();
+    }
 }

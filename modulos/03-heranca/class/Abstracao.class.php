@@ -60,5 +60,7 @@
         return "R$ " . number_format($Valor, '2', '.', ',');
     }
 
+    abstract public function VerSaldo();
+
 
 }
