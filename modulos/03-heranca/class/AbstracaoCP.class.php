@@ -17,7 +17,12 @@ class AbstracaoCP extends AbstracaoCC
         $this->Rendimento = 1.7;
     }
 
-    public function VerSaldo()
+    final public function Depositar($Valor)
+    {
+
+    }
+
+    final public function VerSaldo()
     {
         // TODO: Implement VerSaldo() method.
         parent::Extrato();

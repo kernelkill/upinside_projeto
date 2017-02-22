@@ -17,6 +17,18 @@ class AbstracaoCC extends Abstracao
         $this->Limite = (float) $Limite;
     }
 
+    public function Sacar($Valor)
+    {
+
+        
+    }
+
+    /** @param Abstracao $Destino*/
+    public function Transferir($Valor, $Destino)
+    {
+
+    }
+
 
     public function VerSaldo()
     {
