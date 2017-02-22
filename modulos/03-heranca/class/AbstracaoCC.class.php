@@ -17,16 +17,24 @@ class AbstracaoCC extends Abstracao
         $this->Limite = (float) $Limite;
     }
 
-    public function Sacar($Valor)
+   final public function Sacar($Valor)
     {
-
+        if ($this->Saldo  + $this->Limite >= (float) $Valor):
+            parent::Sacar($Valor);
+        else:
+            echo "<spam style='color: green'><b> {$this->Conta}:</b> Erro ao sacar {$this->Real($Valor)} voce nao tem esse valor!</spam><br>";
+        endif;
         
     }
 
     /** @param Abstracao $Destino*/
-    public function Transferir($Valor, $Destino)
+    final public function Transferir($Valor, $Destino)
     {
-
+        if ($this->Saldo + $this->Limite >= (float) $Valor):
+            parent::Transferir($Valor, $Destino);
+        else:
+            echo "<spam style='color: green'><b> {$this->Conta}:</b> Erro ao tranferir {$this->Real($Valor)} voce nao tem esse valor!</spam><br>";
+        endif;
     }
 
 

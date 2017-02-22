@@ -19,10 +19,14 @@ class AbstracaoCP extends AbstracaoCC
 
     final public function Depositar($Valor)
     {
+        $Juro = $Valor * ($this->Rendimento / 100);
+        $Deposito = $Valor + $Juro;
+        parent::Depositar($Deposito);
+        echo "<small style='color: #0099ff'> Valor de Deposito: {$this->Real($Valor)} || Redimentos: {$this->Real($Juro)}</small><hr>";
 
     }
 
-    final public function VerSaldo()
+    public function VerSaldo()
     {
         // TODO: Implement VerSaldo() method.
         parent::Extrato();

@@ -32,6 +32,10 @@
     $cc = new AbstracaoCC('Joabe Kachorroski', 0, 1000);
     $cp = new AbstracaoCP('Joabe Kachorroski', 0);
 
+    $cc->Depositar(1000);
+    $cc->Sacar(100);
+    $cc->Transferir(500,$cp);
+
     $cc->VerSaldo();
     $cp->VerSaldo();
 
