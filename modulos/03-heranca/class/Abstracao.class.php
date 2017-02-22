@@ -6,7 +6,7 @@
  * Date: 17/02/17
  * Time: 00:07
  */
-class Abstracao
+ abstract class Abstracao
 {
     public $Cliente;
     public $Conta;
