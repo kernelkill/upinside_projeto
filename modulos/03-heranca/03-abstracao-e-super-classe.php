@@ -36,6 +36,10 @@
     $cc->Sacar(100);
     $cc->Transferir(500,$cp);
 
+    $cp->Depositar(1000);
+    $cp->Sacar(100);
+    $cp->Transferir(500,$cc);
+
     $cc->VerSaldo();
     $cp->VerSaldo();
 
