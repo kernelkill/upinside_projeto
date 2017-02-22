@@ -6,7 +6,7 @@
  * Date: 21/02/17
  * Time: 22:05
  */
-class AbstracaoCC
+class AbstracaoCC extends Abstracao
 {
 
 
