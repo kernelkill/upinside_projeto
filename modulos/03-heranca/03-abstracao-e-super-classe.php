@@ -29,9 +29,10 @@
 
     var_dump($conta, $contaDois);*/
 
-    $cc = new AbstracaoCC('Joabe Kachorroski', 500);
+    $cc = new AbstracaoCC('Joabe Kachorroski', 0, 1000);
+    $cp = new AbstracaoCP('Joabe Kachorroski', 0);
 
-    var_dump($cc);
+    var_dump($cc, $cp);
 
 ?>
 
