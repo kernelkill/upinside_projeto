@@ -15,6 +15,10 @@
  * Date: 23/02/17
  * Time: 21:48
  */
+    require_once ('./inc/config.inc.php');
+    
+
 ?>
+
 </body>
 </html>
