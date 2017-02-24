@@ -17,6 +17,14 @@
  */
     require_once ('./inc/config.inc.php');
     
+    $produto = new  ResolucaoDeEscopo('Livro de Web Designer', 90.50);
+    $produto->Vender();
+    $produto->Vender();
+
+    //$produto->Relatorio();
+    ResolucaoDeEscopo::Relatorio();
+
+    var_dump($produto);
 
 ?>
 
