@@ -9,7 +9,8 @@
 </head>
 <body>
 <?php
-    
+
+require_once ('./inc/config.inc.php');
 
 ?>
 </body>
