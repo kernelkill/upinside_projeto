@@ -9,9 +9,15 @@
 </head>
 <body>
 <?php
-
+require_once ('./interface/IAluno.php');
 require_once ('./inc/config.inc.php');
 
+    $aluno = new TrabalhoComInterfaces('Joabe Kachorroski', 'Analise de Sistemas');
+    $aluno->Formar();
+    $aluno->Matricular('WS PHP');
+    $aluno->Formar();
+
+    var_dump($aluno);
 ?>
 </body>
 </html>

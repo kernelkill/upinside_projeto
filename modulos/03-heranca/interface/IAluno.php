@@ -6,6 +6,9 @@
  * Time: 21:33
  */
 
-    interface IAluno{
+    interface IAluno
+    {
+        public function Matricular($Curso);
+        public function Formar();
 
     }
