@@ -18,13 +18,19 @@
     require_once ('./inc/config.inc.php');
     
     $produto = new  ResolucaoDeEscopo('Livro de Web Designer', 90.50);
+    $digital = new ResolucaoDeEscopoDigital('Livro de Web Designer', 80.50);
+
     $produto->Vender();
     $produto->Vender();
+
+    $digital->Vender();
+    $digital->Vender();
 
     //$produto->Relatorio();
     ResolucaoDeEscopo::Relatorio();
+    //echo "O produto Livro de Web Designer vendeu ". ResolucaoDeEscopo::$Vendas;
 
-    var_dump($produto);
+    var_dump($produto,$digital);
 
 ?>
 
