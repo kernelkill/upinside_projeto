@@ -15,8 +15,11 @@
  * Date: 28/02/17
  * Time: 17:30
  */
+    require ('./inc/Config.inc.php');
+    
+    $joabe = new AcessoPrivado('Joabe Kachorroski','joabe@gmail.com',10934586712);
 
-
+    var_dump($joabe);
 ?>
 </body>
 </html>
