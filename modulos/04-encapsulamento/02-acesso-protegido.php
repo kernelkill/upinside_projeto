@@ -18,7 +18,13 @@
 
     require ('./inc/Config.inc.php');
     
+    $joao = new AcessoProtegido('Joao Antonio', 'joaoantonio@server.com');
     
+    $joao->Nome = 'Manuel Silva';
+    //$joao->Email = 'manuelsilva@server.com';
+    $joao->setEmail('manuelsilva@server.com');
+
+    var_dump($joao);
 ?>
 </body>
 </html>
