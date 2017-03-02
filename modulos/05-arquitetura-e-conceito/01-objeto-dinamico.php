@@ -15,7 +15,15 @@
  * Date: 01/03/17
  * Time: 00:37
  */
+    require ('./inc/Config.inc.php');
 
+    $cliente = new ObjetoDinamico;
+
+    $joabe = new stdClass();
+    $joabe->Nome = 'Joabe Kachorroski';
+    $joabe->Email = 'joabe@server.com';
+
+    var_dump($cliente, $joabe);
 
 ?>
 </body>
