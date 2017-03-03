@@ -21,8 +21,8 @@
     $joabe = new AssociacaoLogin($cliente);
 
     if ($joabe->getLogin()):
-        echo "Gerenciaando o cliente id: {$joabe->Cliente->getCliente()}<br>";
-        echo "{$joabe->Cliente->Nome} logou com sucesso usando o email {$joabe->Cliente->Email}";
+        echo "Gerenciaando o cliente id: {$joabe->getCliente()->getCliente()}<br>";
+        echo "{$joabe->getCliente()->getNome()} logou com sucesso usando o email {$joabe->getCliente()->getEmail()}";
     else:
     endif;
 

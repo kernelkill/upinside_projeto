@@ -9,8 +9,8 @@
 class AssociacaoCliente
 {
     private $Cliente;
-    public $Nome;
-    public  $Email;
+    private $Nome;
+    private  $Email;
 
     /**
      * AssociacaoCliente constructor.
@@ -32,5 +32,22 @@ class AssociacaoCliente
     {
         return $this->Cliente;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getNome()
+    {
+        return $this->Nome;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->Email;
+    }
+
 
 }

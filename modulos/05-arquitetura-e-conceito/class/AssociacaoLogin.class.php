@@ -9,7 +9,7 @@
 class AssociacaoLogin
 {
     /** @var AssociacaoCliente */
-    public $Cliente;
+    private $Cliente;
     private $Login;
 
     /**
@@ -26,6 +26,15 @@ class AssociacaoLogin
             die('Erro ao logar!');
         endif;
     }
+
+    /**
+     * @return AssociacaoCliente
+     */
+    public function getCliente()
+    {
+        return $this->Cliente;
+    }
+
 
     /**
      * @return boolean
