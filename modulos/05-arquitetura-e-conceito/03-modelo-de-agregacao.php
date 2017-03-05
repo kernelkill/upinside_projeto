@@ -37,6 +37,7 @@
     $carrinho->Remove($wshtml);
 
 
+
     var_dump($carrinho);
     echo "<hr>";
     var_dump($joabe, $pro, $outrocurso);
