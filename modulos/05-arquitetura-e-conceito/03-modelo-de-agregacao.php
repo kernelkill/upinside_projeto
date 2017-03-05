@@ -28,6 +28,18 @@
     $outrocurso->Produto = '23';
     $outrocurso->Nome = 'Curso JQuery';
     $outrocurso->Valor = 400;
+
+    $carrinho = new agregacaoCarrinho($joabe);
+    $carrinho->Add($pro);
+    $carrinho->Add($wshtml);
+    $carrinho->Add($wsphp);
+
+    $carrinho->Remove($wshtml);
+
+
+    var_dump($carrinho);
+    echo "<hr>";
+    var_dump($joabe, $pro, $outrocurso);
 ?>
 </body>
 </html>
