@@ -19,6 +19,10 @@
 
         require ('./_app/Config.inc.php');
         $con = new Conn();
+        $con->getConn();
+
+
+        var_dump($con->getConn());
 ?>
 </body>
 </html>
