@@ -13,15 +13,22 @@ define('PASS','root');
 define('DBSA','wsphp');
 
 //AUTO LOAD DE CLASSES. #############
-
 function __autoload($Class) {
 
-    $dirName = 'class';
+    $cDir = ['Conn'];
+    $iDir = null;
 
-    if(file_exists("{$dirName}/{$Class}.class.php")):
-        require_once("{$dirName}/{$Class}.class.php");
-    else:
-        die("Erro ao incluir {$dirName}/{$Class}.class.php<hr>");
+    foreach ($cDir as $dirName):
+        if (!$iDir && file_exists(__DIR__ . DIRECTORY_SEPARATOR. $dirName .DIRECTORY_SEPARATOR.$Class.'.class.php')
+            && !is_dir(__DIR__ . DIRECTORY_SEPARATOR. $dirName .DIRECTORY_SEPARATOR.$Class.'.class.php')):
+            include_once (__DIR__ . DIRECTORY_SEPARATOR. $dirName .DIRECTORY_SEPARATOR.$Class.'.class.php');
+            $iDir = true;
+        endif;
+    endforeach;
+
+    if (!$iDir):
+        trigger_error("Não foi possível incluir {$Class}.class.php", E_USER_ERROR);
+        die;
     endif;
 }
 
